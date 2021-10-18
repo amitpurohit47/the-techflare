@@ -1,0 +1,171 @@
+.footer {
+  min-height: 30vh;
+  background: #222;
+  padding: 20px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer a {
+  text-decoration: none;
+  color: white;
+  padding-bottom: 1px;
+  border-bottom: 2px solid white;
+}
+
+.footer-main {
+  display: flex;
+  width: 55%;
+}
+
+.footer h2 {
+  font-family: MontserratMedium;
+  font-weight: 700;
+  font-size: 3rem;
+  margin-bottom: 40px;
+  color: white;
+}
+
+.footer p {
+  color: white;
+  font-family: MontserratLight;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.footer .logo .logo-inner p {
+  margin-bottom: 1px;
+}
+
+.contact-form {
+  flex: 1;
+  padding-left: 60px;
+}
+
+.social {
+  flex: 1;
+}
+
+.social a {
+  text-decoration: none;
+  color: white;
+  font-family: MontserratLight;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.social span {
+  background: white;
+  width: 0%;
+  height: 1px;
+  transition: all 800ms ease-in-out;
+}
+
+.footer-link {
+  margin-bottom: 10px;
+  display: flex;
+  flex-flow: column;
+}
+
+.footer-link:hover span {
+  width: 50%;
+}
+
+.contact {
+  flex: 1;
+  max-width: 80%;
+}
+
+.contact p {
+  color: white;
+  font-family: MontserratLight;
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.form-main {
+  display: flex;
+  flex-flow: column;
+}
+
+.form-main input {
+  margin-bottom: 30px;
+  outline: none;
+  background: transparent;
+  color: white;
+  font-size: 1.5rem;
+  font-family: MontserratLight;
+  font-weight: 600;
+  border: none;
+  border-bottom: 1px solid #fff;
+  max-width: 80%;
+  padding: 10px;
+}
+
+::-webkit-input-placeholder {
+  color: white;
+}
+
+.form-main textarea {
+  max-width: 80%;
+  min-height: 200px;
+  background: transparent;
+  resize: none;
+  overflow-y: auto;
+  font-size: 1.5rem;
+  color: white;
+  border: 1px solid white;
+  padding: 10px;
+  font-family: MontserratLight;
+  font-weight: 600;
+}
+
+.form-main textarea:focus-visible {
+  outline: none;
+}
+
+.contact-btn {
+  width: 200px;
+  margin-top: 30px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-family: MontserratMedium;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: black;
+  background: white;
+  padding: 10px;
+  border-radius: 40px;
+  transition: all 200ms ease-in-out;
+}
+
+.contact-btn:hover {
+  transform: scale(1.1);
+}
+
+.copyright {
+  color: white;
+  background: #222;
+  text-align: center;
+  width: 100%;
+  font-family: MontserratLight;
+  font-weight: 600;
+  padding-bottom: 10px;
+  padding-top: 5px;
+}
+
+.footer .logo .logo-inner p:first-child{
+  color: white;
+}
+
+.footer .logo .logo-inner p:last-child{
+  color: white;
+}
+
+.footer .logo .logo-inner p:last-child span{
+  color: white;
+}

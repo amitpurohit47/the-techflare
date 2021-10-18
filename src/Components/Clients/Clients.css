@@ -1,0 +1,33 @@
+.clients {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  padding-top: 10vh;
+}
+
+.clients h2 {
+  font-family: MontserratMedium;
+  font-weight: 700;
+  font-size: 3rem;
+  margin-top: 30px;
+  width: 100%;
+  text-align: center;
+}
+
+.clients-track {
+  width: 75%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px 0;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+}
+
+.clients-track img {
+  margin: 20px;
+  /* animation: scroll 2s linear infinite; */
+  width: 200px;
+}

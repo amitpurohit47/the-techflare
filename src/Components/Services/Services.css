@@ -1,0 +1,87 @@
+.services {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10vh;
+  margin-bottom: 30px;
+}
+
+.service {
+  margin: 0 15px;
+  background-color: white;
+}
+
+.services h2 {
+  font-family: MontserratMedium;
+  font-weight: 700;
+  font-size: 3rem;
+  margin-bottom: 40px;
+  margin-top: 30px;
+}
+
+.services-row {
+  display: flex;
+  width: 100%;
+  margin-bottom: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-header {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  width: 350px;
+  height: 200px;
+  border: 3px solid #555;
+  background-color: white;
+  z-index: 0;
+  position: relative;
+}
+
+.service-header::after,
+.service-header::before {
+  position: absolute;
+  background: white;
+  z-index: -1;
+  transition: 1s;
+  content: "";
+}
+
+.service-header::before {
+  height: 200px;
+  width: 330px;
+}
+.service-header::after {
+  height: 180px;
+  width: 350px;
+}
+
+.service-header:hover::before {
+  width: 0;
+}
+
+.service-header:hover::after {
+  height: 0;
+}
+
+.service-header img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+.service-header p {
+  font-family: MontserratMedium;
+  font-size: 1.3rem;
+  text-align: center;
+  color: #410b74;
+}
+
+.service-content {
+  font-family: MontserratLight;
+  font-weight: 600;
+}

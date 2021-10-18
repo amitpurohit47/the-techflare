@@ -1,25 +1,46 @@
-import logo from './logo.svg';
-import './App.css';
+import { useEffect } from "react";
+import Header from "./Components/Header/Header";
+import MobileNav from "./Components/MobileNav/MobileNav";
+import About from './Components/About/About';
+import Services from './Components/Services/Services';
+import Techs from './Components/Techs/Techs';
+import Clients from './Components/Clients/Clients';
+import Footer from './Components/Footer/Footer';
+import Landing from "./Components/Landing/Landing";
+import "aos/dist/aos.css"
+import AOS from 'aos';
+import "./App.css";
+import Careers from "./Components/Careers/Careers";
+import Blog from "./Components/Blog/Blog";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 function App() {
+  useEffect(() => {
+    AOS.init();
+    const loader = document.getElementById("loader");
+    setTimeout(() => {
+      loader.style.display = "none";
+    }, 3000);
+  });
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <BrowserRouter>
+      <article className="App">
+        <Header />
+        <MobileNav />
+        <Switch>
+          <Route path="/" exact component={Landing} />
+          <Route path="/about" exact component={About} />
+          <Route path="/services" exact component={Services} />
+          <Route path="/careers" exact component={Careers} />
+          <Route path="/blog" exact component={Blog} />
+          <Route path="/clients" exact component={Clients} />
+          <Route path="/technologies" exact component={Techs} />
+        </Switch>
+        <Footer />
+      </article>
+    </BrowserRouter>
+    );
 }
 
 export default App;

@@ -1,0 +1,23 @@
+.blog{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10vh;
+    margin-bottom: 30px;
+    min-height: 80vh;
+}
+
+.blog h2{
+    font-family: MontserratMedium;
+    font-weight: 700;
+    font-size: 3rem;
+    margin-top: 30px;
+    width: 100%;
+    text-align: center;
+}
+
+.blog-main{
+    margin-top: 30px;
+    color: #410b74;
+}
