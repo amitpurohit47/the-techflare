@@ -3,7 +3,6 @@ import Header from "./Components/Header/Header";
 import MobileNav from "./Components/MobileNav/MobileNav";
 import About from './Components/About/About';
 import Services from './Components/Services/Services';
-import Clients from './Components/Clients/Clients';
 import Footer from './Components/Footer/Footer';
 import Landing from "./Components/Landing/Landing";
 import "aos/dist/aos.css"
