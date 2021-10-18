@@ -8,6 +8,11 @@ function Header() {
   const [active,setActive] = useState("home");
 
   useEffect(() => {
+
+    const arr = window.location.href.split("/");
+    if(arr[3]!==''){
+      setActive(arr[3]);
+    }
     
     // const toggleMobileMenu = (e) => {
     //   e.preventDefault();
@@ -24,7 +29,7 @@ function Header() {
     // };
     // ham.addEventListener("click", toggleMobileMenu);
 
-  });
+  },[active]);
 
   return (
     <nav className="nav-bar">
