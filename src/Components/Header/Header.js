@@ -62,21 +62,13 @@ function Header() {
           <div className="nav-item" onClick={()=>setActive("services")}>Services</div>
           <span className={active==="services" ? 'span-active' : ''}></span>
         </Link>
-        <Link to="/technologies" onClick={()=>setActive("techs")}>
-          <div className="nav-item">Technologies</div>
-          <span className={active==="techs" ? 'span-active' : ''}></span>
-        </Link>
         <Link to="/careers" onClick={()=>setActive("careers")}>
           <div className="nav-item">Careers</div>
           <span className={active==="careers" ? 'span-active' : ''}></span>
         </Link>
         <Link to="/blog" onClick={()=>setActive("blog")}>
-          <div className="nav-item">Blog</div>
+          <div className="nav-item">Blogs</div>
           <span className={active==="blog" ? 'span-active' : ''}></span>
-        </Link>
-        <Link to="/clients" onClick={()=>setActive("clients")}>
-          <div className="nav-item">Clients</div>
-          <span className={active==="clients" ? 'span-active' : ''}></span>
         </Link>
 
         <a href="#footer">

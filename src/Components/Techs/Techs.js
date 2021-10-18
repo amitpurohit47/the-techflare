@@ -21,7 +21,7 @@ import "./Techs.css";
 
 function Techs() {
   return (
-    <div className="techs">
+    <div className="techs" id="techs">
       <h2 data-aos-duration="2000" data-aos="fade-up">
         What we use
       </h2>

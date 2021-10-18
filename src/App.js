@@ -3,7 +3,6 @@ import Header from "./Components/Header/Header";
 import MobileNav from "./Components/MobileNav/MobileNav";
 import About from './Components/About/About';
 import Services from './Components/Services/Services';
-import Techs from './Components/Techs/Techs';
 import Clients from './Components/Clients/Clients';
 import Footer from './Components/Footer/Footer';
 import Landing from "./Components/Landing/Landing";
@@ -18,9 +17,7 @@ function App() {
   useEffect(() => {
     AOS.init();
     const loader = document.getElementById("loader");
-    setTimeout(() => {
-      loader.style.display = "none";
-    }, 3000);
+    loader.style.display = "none";
   });
 
   return (
@@ -34,8 +31,6 @@ function App() {
           <Route path="/services" exact component={Services} />
           <Route path="/careers" exact component={Careers} />
           <Route path="/blog" exact component={Blog} />
-          <Route path="/clients" exact component={Clients} />
-          <Route path="/technologies" exact component={Techs} />
         </Switch>
         <Footer />
       </article>
