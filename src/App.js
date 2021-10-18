@@ -19,6 +19,7 @@ function App() {
     loader.style.display = "none";
   });
 
+
   return (
     <BrowserRouter>
       <article className="App">

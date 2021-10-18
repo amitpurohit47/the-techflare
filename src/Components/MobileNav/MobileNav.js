@@ -1,32 +1,45 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function MobileNav() {
-  console.log("nav");
+  const closeNav = () => {
+    window.scrollTo(0,0);
+    document.querySelector(".mobile-menu").classList.remove("menu-active");
+    const span = document.querySelector(".hamburger").querySelectorAll("span");
+    span[0].classList.remove("span1");
+    span[1].classList.remove("span2");
+    span[2].classList.remove("span3");
+  };
   return (
     <div className="mobile-menu">
-      <a href="#home" data-aos="fade-left">
-        <div className="nav-item" data-name="home">
+      <Link to="/">
+        <div className="nav-item" data-name="home" onClick={closeNav}>
           Home
         </div>
         <span></span>
-      </a>
-      <a href="#about" data-aos="fade-left">
-        <div className="nav-item" data-name="about">
+      </Link>
+      <Link to="/about">
+        <div className="nav-item" data-name="about" onClick={closeNav}>
           About
         </div>
-      </a>
-      <a href="#services" data-aos="fade-left">
-        <div className="nav-item" data-name="services">
+      </Link>
+      <Link to="/services">
+        <div className="nav-item" data-name="services" onClick={closeNav}>
           Services
         </div>
-      </a>
-      <a href="#clients" data-aos="fade-left">
-        <div className="nav-item" data-name="clients">
-          Clients
+      </Link>
+      <Link to="/careers">
+        <div className="nav-item" data-name="clients" onClick={closeNav}>
+          Careers
         </div>
-      </a>
-      <a href="#footer" data-aos="fade-left">
-        <div className="nav-item" data-name="footer">
+      </Link>
+      <Link to="/blog">
+        <div className="nav-item" data-name="clients" onClick={closeNav}>
+          Blogs
+        </div>
+      </Link>
+      <a href="#footer">
+        <div className="nav-item" data-name="footer" onClick={closeNav}>
           Contact
         </div>
       </a>

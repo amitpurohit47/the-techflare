@@ -8,7 +8,11 @@ function About() {
     const custom = document.querySelector(".custom");
     const handleCustom = (e) => {
       if (window.innerWidth < 500) {
-        custom.style.backgroundSize = 400 - window.pageYOffset / 30 + "%";
+        custom.style.backgroundSize = 500 - window.pageYOffset / 30 + "%";
+        return;
+      }
+      if(window.innerWidth < 750) {
+        custom.style.backgroundSize = 300 - window.pageYOffset / 30 + "%";
         return;
       }
       custom.style.backgroundSize = 200 - window.pageYOffset / 30 + "%";

@@ -102,11 +102,30 @@
   .about p {
     font-size: 1.2rem;
   }
+  .careers-inner{
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .careers img{
+    width: 60%;
+    margin-left: 0;
+  }
+  .landing-content1-inner img{
+    width: 50%;
+  }
 }
 
 @media (max-width:1100px){
   .nav-contact{
     display: none;
+  }
+  .landing-content3-inner h1{
+    font-size: 3rem;
+  }
+  .carousel-item{
+    padding-top: 15vh;
   }
 }
 
@@ -143,6 +162,9 @@
     flex-flow: column;
     align-items: center;
     justify-content: center;
+  }
+  .footer p{
+    text-align: center;
   }
   .footer-main {
     width: 80%;
@@ -199,6 +221,7 @@
 
   .about img {
     width: 60%;
+    margin-bottom: 30px;
   }
 
   .about {
@@ -206,6 +229,62 @@
   }
 
   .about h2 {
+    text-align: center;
+  }
+  .landing-about-img{
+    display: none;
+  }
+  .landing-about-main{
+    width: 100%;
+    margin: auto;
+  }
+  .vision-mission-inner{
+    margin-bottom: 10vh;
+  }
+  .landing-cards{
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .landing-card{
+    margin-bottom: 30px;
+    width: 350px;
+  }
+  .landing-about{
+    height: auto;
+  }
+  .techs{
+    margin-top: 0;
+  }
+  .footer-main{
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer-contact,.footer-services,.footer-other,.footer-company{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .footer h1{
+    margin-bottom: 10px;
+  }
+  .carousel-item{
+    padding-top: 20vh;
+  }
+  .landing-content1-inner,.landing-content2-inner,.landing-content3-inner{
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .landing-content1-main,.landing-content2-main,.landing-content3-main{
+    display: contents;
+    margin-bottom: 30px;
+  }
+  .landing-content1-inner img{
+    margin-top: 30px;
+  }
+  .landing-content1-main h1, .landing-content2-main h1, .landing-content3-main h1{
     text-align: center;
   }
 }
@@ -285,6 +364,31 @@
   #tailwind {
     max-width: 300px;
   }
+  
+  .blog-main h2{
+    font-size: 1.5rem !important;
+  }
+  /* .vision-mission{
+  } */
+  .vision-mission-inner{
+    margin-bottom: 10vh;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .vision-mission-main{
+    width: 90%;
+  }
+  .landing-about-main h1{
+    font-size: 1.79rem;
+    text-align: center;
+  }
+  .landing-about-main p{
+    text-align: justify;
+  }
+  .copyright{
+    font-size: 0.9rem !important;
+  }
 }
 
 @media (max-width: 500px) {
@@ -306,7 +410,7 @@
   }
 
   .logo img {
-    width: 50px;
+    width: 120px;
     padding-top: 5px;
   }
 
@@ -324,7 +428,10 @@
 
   .footer p {
     font-size: 1.1rem;
-    margin-bottom: 10px;
+    text-align: left;
+  }
+
+  .footer-contact p{
     text-align: center;
   }
 
@@ -411,15 +518,41 @@
   .footer .logo .logo-inner p {
     text-align: left;
   }
-  .landing-page .carousel .carousel-bg {
-    background-size: cover;
+  
+  .mission p, .vision p{
+    font-size: 1rem;
   }
-  .landing-page .carousel .carousel-item:nth-child(4) .carousel-bg {
-    background-image: url(./Assets/Images/916.jpg);
-    background-position-x: 40%;
+  .landing-card{
+    width: 300px;
   }
-  .landing-page .carousel .carousel-item:nth-child(3) .carousel-bg {
-    background-position-x: 35%;
+  .testimonial h1{
+    font-size: 1.9rem;
+    text-align: center;
+  }
+  .testimonial-main{
+    width: 90%;
+    text-align: justify;
+  }
+  .landing-content1-main h1{
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  .landing-content2-main h1{
+    font-size: 2rem;
+    text-align: center;
+  }
+  .landing-content3-main h1{
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  .landing-content1-inner img{
+    width: 80%;
+  }
+  .landing-content2-inner img,.landing-content3-inner img{
+    width: 80%;
+  }
+  .footer h1{
+    text-align: left;
   }
 }
 

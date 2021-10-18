@@ -3,6 +3,7 @@ import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 import l1 from "../../Assets/Images/l1.jpg";
 import l2 from "../../Assets/Images/l2.jpg";
+import l3 from "../../Assets/Images/l3.jpg";
 import meeting from "../../Assets/Images/meeting.jpg";
 import quote from "../../Assets/Images/quote.svg";
 import { Link } from "react-router-dom";
@@ -31,8 +32,21 @@ function Landing() {
           <div className="landing-content2-main">
             <h1>Your Personal </h1>
             <h1>Technology Partner</h1>
+            <button>Contact Us</button>
           </div>
           <img src={l2} alt="landing" />
+        </div>
+      </div>
+    </div>,
+    <div className="carousel-item">
+      <div className="landing-content3">
+        <div className="landing-content3-inner">
+          <div className="landing-content3-main">
+            <h1>Leveraging Tech to Drive</h1>
+            <h1>A better IT Experience</h1>
+            <button>Contact Us</button>
+          </div>
+          <img src={l3} alt="landing" />
         </div>
       </div>
     </div>,

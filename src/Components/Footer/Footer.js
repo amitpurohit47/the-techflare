@@ -1,31 +1,50 @@
 import React from "react";
-import logo from "../../Assets/Images/techflare2.jpeg";
+import logo from "../../Assets/Images/mainlogo.png";
 import "./Footer.css";
 
 function Footer() {
   return (
     <div className="footer" id="footer">
-      <h2>Contact Us</h2>
-      <p>
-        Feel free to connect with us through our WhatsApp number
-        <a href="https://wa.me/?phone=918983569006" target="_blank" rel="noreferrer">
-          +91 8983569006
-        </a>
-      </p>
-      <p>
-        For any queries we are just a mail away at
-        <a href="mailto:info@thetechflare.com">info@thetechflare.com</a>
-      </p>
-      <div className="logo">
-        <img src={logo} alt="logo" />
-        <div className="logo-inner">
-          <p>THE</p>
-          <p>
-            <span>TECH</span>FLARE
-          </p>
+      <div className="footer-main">
+        <div className="footer-contact">
+          <img src={logo} alt="logo" />
+          <p>219, The Business Hub, Pune</p>
+          <a href="https://wa.me/?phone=918983569006">P: +91 8983569006</a>
+          <a href="mailto:info@thetechflare.com">
+            M: info@customtechflare.co.in
+          </a>
+        </div>
+        <div className="footer-services">
+          <h1>IT Services</h1>
+          <p>Website Development</p>
+          <p>App Development</p>
+          <p>Blockchain</p>
+          <p>IoT</p>
+          <p>Digital Marketing</p>
+          <p>Cloud</p>
+          <p>JS Services</p>
+          <p>More...</p>
+        </div>
+        <div className="footer-company">
+          <h1>Company</h1>
+          <p>About</p>
+          <p>Mission and Vision</p>
+          <p>Values</p>
+          <p>Leadership Team</p>
+          <p>Careers</p>
+          <p>Support</p>
+        </div>
+        <div className="footer-other">
+          <h1>Contact Us</h1>
+          <p>Case Studies</p>
+          <p>IT Blog</p>
+          <p>Cookies Policy</p>
+          <p>Privacy Policy</p>
         </div>
       </div>
-      <p className="copyright">&copy; THE TECHFLARE PVT. LTD. 2021</p>
+      <p className="copyright">
+        Copyright &copy;2021-2022 THE TECHFLARE PVT. LTD.
+      </p>
     </div>
   );
 }

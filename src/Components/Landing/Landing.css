@@ -39,14 +39,25 @@
   width: 100%
 }
 
+.landing-content3-inner{
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%
+}
+
 .landing-content1-inner img{
   width: 60%;
 }
 .landing-content2-inner img{
   width: 40%;
 }
+.landing-content3-inner img{
+  width: 40%;
+}
 
-.landing-content1-main h1,.landing-content2-main h1{
+.landing-content1-main h1,.landing-content2-main h1,.landing-content3-main h1{
   color: #242582;
   font-size: 3.5rem;
   font-family: 'Ubuntu', sans-serif;
@@ -59,7 +70,7 @@
   font-size: 1.2rem;
 }
 
-.landing-content1-inner button{
+.carousel-item button{
   background-color: #F64C72;
   color: white;
   outline: none;
@@ -133,7 +144,7 @@
   justify-content: space-between;
   width: 70%;
   margin: auto;
-  margin-top: 15vh;
+  margin-top: 10vh;
   margin-bottom: 10vh;
 }
 
@@ -165,6 +176,8 @@
   background-color: #F64C72;
   margin-top: -10px;
   z-index: 1;
+  width: 120px;
+  text-align: center;
   font-family: 'Saira',sans-serif;
 }
 

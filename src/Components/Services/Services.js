@@ -8,6 +8,7 @@ import webDesign from "../../Assets/Images/web-design.png";
 import websiteapp from "../../Assets/Images/websiteapp.png";
 import saas from "../../Assets/Images/saas.png";
 import industry from "../../Assets/Images/industry.png";
+import Techs from "../Techs/Techs";
 import "./Services.css";
 
 function Services() {
@@ -121,6 +122,7 @@ function Services() {
           </div>
         </div>
       </div>
+      <Techs />
     </div>
   );
 }
