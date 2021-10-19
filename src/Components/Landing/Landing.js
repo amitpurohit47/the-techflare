@@ -12,7 +12,7 @@ import Techs from "../Techs/Techs";
 import "./Landing.css";
 import Clients from "../Clients/Clients";
 
-function Landing() {
+function Landing({setActive}) {
   const items = [
     <div className="carousel-item">
       <div className="landing-content1">
@@ -133,15 +133,15 @@ function Landing() {
         <div className="landing-cards">
           <div className="landing-card">
             <img src={meeting} alt="meeting" />
-            <Link to="/services">Our Services</Link>
+            <Link to="/services" onClick={()=>{window.scrollTo(0,0);setActive("services")}}>Our Services</Link>
           </div>
           <div className="landing-card">
             <img src={meeting} alt="meeting" />
-            <a href="#techs">Technolgies</a>
+            <a href="#techs" >Technolgies</a>
           </div>
           <div className="landing-card">
             <img src={meeting} alt="meeting" />
-            <Link to="/careers">Careers</Link>
+            <Link to="/careers" onClick={()=>{window.scrollTo(0,0);setActive("careers")}}>Careers</Link>
           </div>
         </div>
       </div>

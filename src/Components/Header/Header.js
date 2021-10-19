@@ -1,30 +1,28 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import whatsapp from "../../Assets/Images/whatsapp.png";
 import { Link } from "react-router-dom";
 import logo from "../../Assets/Images/mainlogo.png";
 import "./Header.css";
 
-function Header() {
-  const [active, setActive] = useState("home");
-
+function Header({ active, setActive }) {
   useEffect(() => {
     const arr = window.location.href.split("/");
     if (arr[3] !== "") {
       setActive(arr[3]);
     }
-  }, [active]);
+  }, [active, setActive]);
 
   const toggleMobileMenu = (e) => {
     e.preventDefault();
-    const span = document.querySelector('.hamburger').querySelectorAll('span');
-    const mobilemenu = document.querySelector('.mobile-menu');
-    if (mobilemenu.classList.contains('menu-active')) {
-      mobilemenu.classList.remove('menu-active');
+    const span = document.querySelector(".hamburger").querySelectorAll("span");
+    const mobilemenu = document.querySelector(".mobile-menu");
+    if (mobilemenu.classList.contains("menu-active")) {
+      mobilemenu.classList.remove("menu-active");
       span[0].classList.remove("span1");
       span[1].classList.remove("span2");
       span[2].classList.remove("span3");
     } else {
-      mobilemenu.classList.add('menu-active');
+      mobilemenu.classList.add("menu-active");
       span[0].classList.add("span1");
       span[1].classList.add("span2");
       span[2].classList.add("span3");
@@ -41,9 +39,18 @@ function Header() {
           <span></span>
         </label>
       </div>
-      <div className="logo">
-        <img src={logo} alt="logo" />
-      </div>
+      <Link to="/">
+        <div className="logo">
+          <img
+            src={logo}
+            alt="logo"
+            onClick={() => {
+              window.scrollTo(0, 0);
+              setActive("home");
+            }}
+          />
+        </div>
+      </Link>
       <div className="nav-items">
         <Link to="/">
           <div

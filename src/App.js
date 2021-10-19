@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Header from "./Components/Header/Header";
 import MobileNav from "./Components/MobileNav/MobileNav";
 import About from './Components/About/About';
@@ -19,15 +19,17 @@ function App() {
     loader.style.display = "none";
   });
 
+  const [active, setActive] = useState("home");
+
 
   return (
     <BrowserRouter>
       <article className="App">
-        <Header />
+        <Header active={active} setActive={setActive} />
         <MobileNav />
         <Switch>
-          <Route path="/" exact component={Landing} />
-          <Route path="/about" exact component={About} />
+          <Route path="/" exact component={() => <Landing setActive={setActive} />} />
+          <Route path="/about" exact component={() => <About setActive={setActive} /> } />
           <Route path="/services" exact component={Services} />
           <Route path="/careers" exact component={Careers} />
           <Route path="/blog" exact component={Blog} />
