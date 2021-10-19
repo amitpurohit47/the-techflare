@@ -12,7 +12,7 @@ import Techs from "../Techs/Techs";
 import "./Landing.css";
 import Clients from "../Clients/Clients";
 
-function Landing({setActive}) {
+function Landing({ setActive }) {
   const items = [
     <div className="carousel-item">
       <div className="landing-content1">
@@ -122,7 +122,15 @@ function Landing({setActive}) {
               quantifiable ROI built around customer's goals and strategic
               vision.
             </p>
-            <Link to="/about">Read More</Link>
+            <Link
+              to="/about"
+              onClick={() => {
+                window.scrollTo(0, 0);
+                setActive("about");
+              }}
+            >
+              Read More
+            </Link>
           </div>
           <img
             className="landing-about-img"
@@ -133,15 +141,31 @@ function Landing({setActive}) {
         <div className="landing-cards">
           <div className="landing-card">
             <img src={meeting} alt="meeting" />
-            <Link to="/services" onClick={()=>{window.scrollTo(0,0);setActive("services")}}>Our Services</Link>
+            <Link
+              to="/services"
+              onClick={() => {
+                window.scrollTo(0, 0);
+                setActive("services");
+              }}
+            >
+              Our Services
+            </Link>
           </div>
           <div className="landing-card">
             <img src={meeting} alt="meeting" />
-            <a href="#techs" >Technolgies</a>
+            <a href="#techs">Technolgies</a>
           </div>
           <div className="landing-card">
             <img src={meeting} alt="meeting" />
-            <Link to="/careers" onClick={()=>{window.scrollTo(0,0);setActive("careers")}}>Careers</Link>
+            <Link
+              to="/careers"
+              onClick={() => {
+                window.scrollTo(0, 0);
+                setActive("careers");
+              }}
+            >
+              Careers
+            </Link>
           </div>
         </div>
       </div>
