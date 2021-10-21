@@ -26,7 +26,7 @@ function Contact() {
         message,
       };
       toast.info("We're processing your request",{autoClose:1500});
-      const res = await axios.post("http://techflare-backend.herokuapp.com/", data);
+      const res = await axios.post("https://techflare-backend.herokuapp.com/", data);
       if(res.data.status === "success"){
         toast.success("We've received your message!");
       }else{
