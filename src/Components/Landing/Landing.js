@@ -98,7 +98,7 @@ function Landing({ setActive }) {
   ];
 
   return (
-    <div className="landing-page" id="home">
+    <section className="landing-page" id="home">
       <AliceCarousel
         items={items}
         autoPlay
@@ -182,7 +182,7 @@ function Landing({ setActive }) {
         disableButtonsControls
       />
       <Clients />
-    </div>
+    </section>
   );
 }
 

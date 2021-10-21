@@ -32,7 +32,7 @@ function Header({ active, setActive }) {
   return (
     <nav className="nav-bar">
       <div className="hamburger" onClick={toggleMobileMenu}>
-        <label for="check">
+        <label htmlFor="check">
           <input type="checkbox" id="check" />
           <span></span>
           <span></span>
@@ -108,11 +108,18 @@ function Header({ active, setActive }) {
           <div className="nav-item">Blogs</div>
           <span className={active === "blog" ? "span-active" : ""}></span>
         </Link>
-
-        <a href="#footer">
+        <Link
+          to="/contact"
+          onClick={() => {
+            setActive("contact");
+            window.scrollTo(0, 0);
+          }}
+        >
           <div className="nav-item">Contact</div>
-          <span></span>
-        </a>
+          <span className={active === "contact" ? "span-active" : ""}></span>
+        </Link>
+
+        
       </div>
       <div className="nav-contact">
         <img src={whatsapp} alt="whatsapp logo" />

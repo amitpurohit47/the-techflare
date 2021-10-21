@@ -23,7 +23,7 @@ function About() {
 
   return (
     <div>
-      <div
+      <section
         id="about"
         className="about"
         data-aos="fade-up"
@@ -54,7 +54,7 @@ function About() {
           lasting relationships with our business partners, easily adapting to
           each one of their requirements.
         </p>
-      </div>
+      </section>
       <div className="custom">
         <div className="custom-container">
           <div className="custom-content">
@@ -63,7 +63,7 @@ function About() {
           </div>
         </div>
       </div>
-      <div className="vision-mission">
+      <section className="vision-mission">
         <div className="vision-mission-inner">
           <img src={vision} alt="vision-mission" />
           <div className="vision-mission-main">
@@ -83,7 +83,7 @@ function About() {
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </div>
   );
 }

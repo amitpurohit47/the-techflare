@@ -9,7 +9,7 @@ import "./Clients.css";
 
 function Clients() {
   return (
-    <div className="clients" id="clients">
+    <section className="clients" id="clients">
       <h2 data-aos-duration="2000" data-aos="fade-up">
         Our Clients
       </h2>
@@ -52,7 +52,7 @@ function Clients() {
           data-aos-delay="300"
         />
       </div>
-    </div>
+    </section>
   );
 }
 

@@ -38,11 +38,11 @@ function MobileNav() {
           Blogs
         </div>
       </Link>
-      <a href="#footer">
+      <Link to="/contact">
         <div className="nav-item" data-name="footer" onClick={closeNav}>
           Contact
         </div>
-      </a>
+      </Link>
     </div>
   );
 }

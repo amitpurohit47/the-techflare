@@ -4,14 +4,14 @@ import "./Footer.css";
 
 function Footer() {
   return (
-    <div className="footer" id="footer">
+    <section className="footer" id="footer">
       <div className="footer-main">
         <div className="footer-contact">
           <img src={logo} alt="logo" />
           <p>219, The Business Hub, Pune</p>
           <a href="https://wa.me/?phone=918983569006">P: +91 8983569006</a>
           <a href="mailto:info@thetechflare.com">
-            M: info@customtechflare.co.in
+            M: info@techflare.co.in
           </a>
         </div>
         <div className="footer-services">
@@ -45,7 +45,7 @@ function Footer() {
       <p className="copyright">
         Copyright &copy;2021-2022 THE TECHFLARE PVT. LTD.
       </p>
-    </div>
+    </section>
   );
 }
 

@@ -21,7 +21,7 @@ import "./Techs.css";
 
 function Techs() {
   return (
-    <div className="techs" id="techs">
+    <section className="techs" id="techs">
       <h2 data-aos-duration="2000" data-aos="fade-up">
         What we use
       </h2>
@@ -59,7 +59,7 @@ function Techs() {
           <img src={express} alt="img" />
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

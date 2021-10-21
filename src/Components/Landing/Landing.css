@@ -85,7 +85,7 @@
   transition: 200ms ease-in-out;
 }
 
-.landing-content1-inner button:hover{
+.landing-page button:hover{
   transform: scale(1.1);
 }
 

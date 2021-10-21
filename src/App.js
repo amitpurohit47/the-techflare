@@ -5,6 +5,7 @@ import About from './Components/About/About';
 import Services from './Components/Services/Services';
 import Footer from './Components/Footer/Footer';
 import Landing from "./Components/Landing/Landing";
+import Contact from "./Components/Contact/Contact";
 import "aos/dist/aos.css"
 import AOS from 'aos';
 import "./App.css";
@@ -33,6 +34,7 @@ function App() {
           <Route path="/services" exact component={Services} />
           <Route path="/careers" exact component={Careers} />
           <Route path="/blog" exact component={Blog} />
+          <Route path="/contact" exact component={Contact} />
         </Switch>
         <Footer />
       </article>
