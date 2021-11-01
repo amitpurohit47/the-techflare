@@ -12,6 +12,7 @@ import "./App.css";
 import Careers from "./Components/Careers/Careers";
 import Blog from "./Components/Blog/Blog";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 function App() {
   useEffect(() => {
@@ -27,16 +28,20 @@ function App() {
     <BrowserRouter>
       <article className="App">
         <Header active={active} setActive={setActive} />
+        <Helmet>
+          <title>The TechFlare</title>
+          <meta name="description" content="Best Software Developers in Pune" />
+        </Helmet>
         <MobileNav />
         <Switch>
           <Route path="/" exact component={() => <Landing setActive={setActive} />} />
           <Route path="/about" exact component={() => <About setActive={setActive} /> } />
-          <Route path="/services" exact component={Services} />
-          <Route path="/careers" exact component={Careers} />
-          <Route path="/blog" exact component={Blog} />
-          <Route path="/contact" exact component={Contact} />
+          <Route path="/services" exact component={() => <Services setActive={setActive} />} />
+          <Route path="/careers" exact component={() => <Careers setActive={setActive} />} />
+          <Route path="/blog" exact component={() => <Blog setActive={setActive} />} />
+          <Route path="/contact" exact component={() => <Contact setActive={setActive} />} />
         </Switch>
-        <Footer />
+        <Footer setActive={setActive} />
       </article>
     </BrowserRouter>
     );

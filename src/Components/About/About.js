@@ -1,25 +1,10 @@
-import React, { useEffect } from "react";
+import React from "react";
 import aboutimg from "../../Assets/Images/about1.jpg";
 import vision from "../../Assets/Images/vision.jpg";
+import { Helmet } from "react-helmet";
 import "./About.css";
 
 function About() {
-  useEffect(() => {
-    const custom = document.querySelector(".custom");
-    const handleCustom = (e) => {
-      if (window.innerWidth < 500) {
-        custom.style.backgroundSize = 500 - window.pageYOffset / 30 + "%";
-        return;
-      }
-      if(window.innerWidth < 750) {
-        custom.style.backgroundSize = 300 - window.pageYOffset / 30 + "%";
-        return;
-      }
-      custom.style.backgroundSize = 200 - window.pageYOffset / 30 + "%";
-    };
-
-    window.addEventListener("scroll", handleCustom);
-  });
 
   return (
     <div>
@@ -31,6 +16,26 @@ function About() {
         data-aos-delay="100"
       >
         <h2>About Us</h2>
+        <Helmet>
+          <title>About TechFlare</title>
+          <meta name="description" content="Best Software Developers in Pune" />
+          <meta name="description" content="Best Web Developers in Pune" />
+          <meta name="description" content="Best App Developers in Pune" />
+          <meta name="description" content="Best Web Designers in Pune" />
+          <meta
+            name="description"
+            content="Best Blockchain Developers in Pune"
+          />
+          <meta name="description" content="Best Hosting Services in Pune" />
+          <meta
+            name="description"
+            content="Best Social Media Marketing Services in Pune"
+          />
+          <meta
+            name="keywords"
+            content="Techflare About , The Techflare, Web Developers, Web Designers, Blockchain Developers, Hosting, App Developers"
+          />
+        </Helmet>
         <div className="about-inner">
           <p>
             TECHFLARE is a tech startup consisting of passionate software
@@ -55,14 +60,6 @@ function About() {
           each one of their requirements.
         </p>
       </section>
-      <div className="custom">
-        <div className="custom-container">
-          <div className="custom-content">
-            <p>We build</p>
-            <p>Long Lasting relationships</p>
-          </div>
-        </div>
-      </div>
       <section className="vision-mission">
         <div className="vision-mission-inner">
           <img src={vision} alt="vision-mission" />

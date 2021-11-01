@@ -53,6 +53,14 @@
   font-size: 1.1rem;
 }
 
+.footer-main a{
+  text-decoration: none;
+  display: block;
+  font-family: "Saira", sans-serif;
+  font-size: 1.1rem;
+  color: black;
+}
+
 .footer-company {
   width: 20%;
 }

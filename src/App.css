@@ -603,6 +603,9 @@
   .services-right h1{
     font-size: 1.9rem;
   }
+  .landing-page .techs{
+    margin: 7vh 0;
+  }
 }
 
 @media (max-width: 330px) {

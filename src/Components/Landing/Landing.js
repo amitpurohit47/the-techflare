@@ -4,7 +4,9 @@ import "react-alice-carousel/lib/alice-carousel.css";
 import l1 from "../../Assets/Images/l1.jpg";
 import l2 from "../../Assets/Images/l2.jpg";
 import l3 from "../../Assets/Images/l3.jpg";
-import meeting from "../../Assets/Images/meeting.jpg";
+import about1 from "../../Assets/Images/techflareservices.jpg";
+import about2 from "../../Assets/Images/techflarecareers.jpg";
+import about3 from "../../Assets/Images/interview.jpg";
 import quote from "../../Assets/Images/quote.svg";
 import { Link } from "react-router-dom";
 import landingabout from "../../Assets/Images/landingabout.jpg";
@@ -20,7 +22,15 @@ function Landing({ setActive }) {
           <div className="landing-content1-main">
             <h1>THE TECHFLARE</h1>
             <p>Our Solutions is what makes us unique</p>
-            <button>Contact Us</button>
+            <Link
+              to="/contact"
+              onClick={() => {
+                setActive("contact");
+                window.scrollTo(0, 0);
+              }}
+            >
+              <button>Contact Us</button>
+            </Link>
           </div>
           <img src={l1} alt="landing" />
         </div>
@@ -32,7 +42,15 @@ function Landing({ setActive }) {
           <div className="landing-content2-main">
             <h1>Your Personal </h1>
             <h1>Technology Partner</h1>
-            <button>Contact Us</button>
+            <Link
+              to="/contact"
+              onClick={() => {
+                setActive("contact");
+                window.scrollTo(0, 0);
+              }}
+            >
+              <button>Contact Us</button>
+            </Link>
           </div>
           <img src={l2} alt="landing" />
         </div>
@@ -44,7 +62,15 @@ function Landing({ setActive }) {
           <div className="landing-content3-main">
             <h1>Leveraging Tech to Drive</h1>
             <h1>A better IT Experience</h1>
-            <button>Contact Us</button>
+            <Link
+              to="/contact"
+              onClick={() => {
+                setActive("contact");
+                window.scrollTo(0, 0);
+              }}
+            >
+              <button>Contact Us</button>
+            </Link>
           </div>
           <img src={l3} alt="landing" />
         </div>
@@ -140,7 +166,7 @@ function Landing({ setActive }) {
         </div>
         <div className="landing-cards">
           <div className="landing-card">
-            <img src={meeting} alt="meeting" />
+            <img src={about1} alt="meeting" />
             <Link
               to="/services"
               onClick={() => {
@@ -152,11 +178,11 @@ function Landing({ setActive }) {
             </Link>
           </div>
           <div className="landing-card">
-            <img src={meeting} alt="meeting" />
+            <img src={about2} alt="meeting" />
             <a href="#techs">Technolgies</a>
           </div>
           <div className="landing-card">
-            <img src={meeting} alt="meeting" />
+            <img src={about3} alt="meeting" />
             <Link
               to="/careers"
               onClick={() => {

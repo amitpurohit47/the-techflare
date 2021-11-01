@@ -1,8 +1,15 @@
 import React from "react";
 import logo from "../../Assets/Images/mainlogo.png";
+import { Link } from "react-router-dom";
 import "./Footer.css";
 
-function Footer() {
+function Footer({setActive}) {
+
+  const scrolltotop = (name) => {
+    setActive(name);
+    window.scrollTo(0,0);
+  }
+
   return (
     <section className="footer" id="footer">
       <div className="footer-main">
@@ -16,30 +23,30 @@ function Footer() {
         </div>
         <div className="footer-services">
           <h1>IT Services</h1>
-          <p>Website Development</p>
-          <p>App Development</p>
-          <p>Blockchain</p>
-          <p>IoT</p>
-          <p>Digital Marketing</p>
-          <p>Cloud</p>
-          <p>JS Services</p>
-          <p>More...</p>
+          <Link onClick={() => scrolltotop("services")}to="/services">Website Development</Link>
+          <Link onClick={() => scrolltotop("services")}to="/services">App Development</Link>
+          <Link onClick={() => scrolltotop("services")}to="/services">Blockchain</Link>
+          <Link onClick={() => scrolltotop("services")}to="/services">IoT</Link>
+          <Link onClick={() => scrolltotop("services")}to="/services">Digital Marketing</Link>
+          <Link onClick={() => scrolltotop("services")}to="/services">Cloud</Link>
+          <Link onClick={() => scrolltotop("services")}to="/services">JS Services</Link>
+          <Link onClick={() => scrolltotop("services")}to="/services">More...</Link>
         </div>
         <div className="footer-company">
           <h1>Company</h1>
-          <p>About</p>
-          <p>Mission and Vision</p>
-          <p>Values</p>
-          <p>Leadership Team</p>
-          <p>Careers</p>
-          <p>Support</p>
+          <Link onClick={() => scrolltotop("about")}to="/about">About</Link>
+          <Link onClick={() => scrolltotop("about")}to="/about">Mission and Vision</Link>
+          <Link onClick={() => scrolltotop("about")}to="/about">Values</Link>
+          <Link onClick={() => scrolltotop("about")}to="/about">Leadership Team</Link>
+          <Link onClick={() => scrolltotop("about")}to="/about">Careers</Link>
+          <Link onClick={() => scrolltotop("about")}to="/about">Support</Link>
         </div>
         <div className="footer-other">
           <h1>Contact Us</h1>
-          <p>Case Studies</p>
-          <p>IT Blog</p>
-          <p>Cookies Policy</p>
-          <p>Privacy Policy</p>
+          <Link onClick={() => scrolltotop("contact")}to="/contact">Case Studies</Link>
+          <Link onClick={() => scrolltotop("contact")}to="/contact">IT Blog</Link>
+          <Link onClick={() => scrolltotop("contact")}to="/contact">Cookies Policy</Link>
+          <Link onClick={() => scrolltotop("contact")}to="/contact">Privacy Policy</Link>
         </div>
       </div>
       <p className="copyright">

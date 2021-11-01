@@ -86,25 +86,25 @@
   font-weight: 600;
 }
 
-.services .techs{
+.services .techs {
   margin-top: 0;
 }
 
-.services-main{
+.services-main {
   display: flex;
   width: 80%;
   box-shadow: 0 2px 37px 0 rgb(0 0 0 / 10%);
-  -webkit-box-shadow : 0 2px 37px 0 rgb(0 0 0 / 10%);
+  -webkit-box-shadow: 0 2px 37px 0 rgb(0 0 0 / 10%);
 }
 
-.services-left{
+.services-left {
   background-color: #242582;
   color: white;
-  font-family: 'Ubuntu',sans-serif;
-  transform: translate(-30px,-30px);
+  font-family: "Ubuntu", sans-serif;
+  transform: translate(-30px, -30px);
   padding: 20px;
   box-shadow: 0 2px 37px 0 rgb(0 0 0 / 10%);
-  -webkit-box-shadow : 0 2px 37px 0 rgb(0 0 0 / 10%);
+  -webkit-box-shadow: 0 2px 37px 0 rgb(0 0 0 / 10%);
   max-width: 350px;
   display: flex;
   flex-flow: column;
@@ -112,64 +112,65 @@
   justify-content: center;
 }
 
-.services-left p{
+.services-left p {
   font-size: 1.3rem;
   padding: 15px;
   width: 300px;
   cursor: pointer;
 }
 
-.services-left .service-active{
+.services-left .service-active {
   width: 400px;
-  background-color: #F64C72;
+  background-color: #f64c72;
   box-shadow: 0 2px 37px 0 rgb(0 0 0 / 10%);
-  -webkit-box-shadow : 0 2px 37px 0 rgb(0 0 0 / 10%);
+  -webkit-box-shadow: 0 2px 37px 0 rgb(0 0 0 / 10%);
+  position: relative;
 }
 
-.services-right{
+.services-right {
   padding: 3rem;
 }
 
-.services-right h1{
+.services-right h1 {
   font-size: 2.8rem;
-  font-family: 'Ubuntu',sans-serif;
+  font-family: "Ubuntu", sans-serif;
   margin-bottom: 50px;
   position: relative;
 }
 
-.services-right h1::after{
+.services-right h1::after {
   position: absolute;
-  content: '';
+  content: "";
   width: 10%;
   height: 5px;
   left: 0;
   bottom: -20px;
-  background-color: #F64C72;
+  background-color: #f64c72;
 }
 
-.services-right>p{
-  font-family: 'Saira',sans-serif;
+.services-right > p {
+  font-family: "Saira", sans-serif;
   font-size: 1.2rem;
   margin-bottom: 30px;
 }
 
-.service-bullets{
+.service-bullets {
   display: flex;
   flex-wrap: wrap;
 }
 
-.service-bullets p{
+.service-bullets p {
   display: inline-block;
   width: 50%;
   font-size: 1.2rem;
   padding: 10px;
-  font-family: 'Saira',sans-serif;
+  font-family: "Saira", sans-serif;
   position: relative;
 }
 
-.service-bullets p::after{
+.service-bullets p::after {
   position: absolute;
-  content: '';
+  content: "";
   top: 43%;
   left: -5px;
   background-color: #242582;
@@ -177,6 +178,6 @@
   height: 6px;
 }
 
-.services-carousel{
+.services-carousel {
   display: none;
 }

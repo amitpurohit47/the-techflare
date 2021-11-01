@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Helmet } from "react-helmet";
 // import web from "../../Assets/Images/web.png";
 // import hosting from "../../Assets/Images/hosting.png";
 // import softwareEngineering from "../../Assets/Images/software-engineering.png";
@@ -77,6 +78,23 @@ function Services() {
 
   return (
     <section className="services" id="services">
+      <Helmet>
+        <title>TechFlare Services</title>
+        <meta name="description" content="Best Software Developers in Pune" />
+        <meta name="description" content="Best Web Developers in Pune" />
+        <meta name="description" content="Best App Developers in Pune" />
+        <meta name="description" content="Best Web Designers in Pune" />
+        <meta name="description" content="Best Blockchain Developers in Pune" />
+        <meta name="description" content="Best Hosting Services in Pune" />
+        <meta
+          name="description"
+          content="Best Social Media Marketing Services in Pune"
+        />
+        <meta
+          name="keywords"
+          content="TechFlare Services, The Techflare, Web Developers, Web Designers, Blockchain Developers, Hosting, App Developers"
+        />
+      </Helmet>
       <h2 data-aos="fade-up" data-aos-duration="2000">
         Services
       </h2>

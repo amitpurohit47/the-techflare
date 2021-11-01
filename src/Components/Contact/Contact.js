@@ -3,6 +3,7 @@ import axios from "axios";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "./Contact.css";
+import { Helmet } from "react-helmet";
 
 toast.configure();
 function Contact() {
@@ -25,11 +26,14 @@ function Contact() {
         inquiry,
         message,
       };
-      toast.info("We're processing your request",{autoClose:1500});
-      const res = await axios.post("https://techflare-backend.herokuapp.com/", data);
-      if(res.data.status === "success"){
+      toast.info("We're processing your request", { autoClose: 1500 });
+      const res = await axios.post(
+        "https://techflare-backend.herokuapp.com/",
+        data
+      );
+      if (res.data.status === "success") {
         toast.success("We've received your message!");
-      }else{
+      } else {
         toast.error("Something went wrong!");
       }
     } catch (error) {
@@ -40,6 +44,23 @@ function Contact() {
 
   return (
     <section className="contact-us" id="contact-us">
+      <Helmet>
+        <title>Contact Us</title>
+        <meta name="description" content="Best Software Developers in Pune" />
+        <meta name="description" content="Best Web Developers in Pune" />
+        <meta name="description" content="Best App Developers in Pune" />
+        <meta name="description" content="Best Web Designers in Pune" />
+        <meta name="description" content="Best Blockchain Developers in Pune" />
+        <meta name="description" content="Best Hosting Services in Pune" />
+        <meta
+          name="description"
+          content="Best Social Media Marketing Services in Pune"
+        />
+        <meta
+          name="keywords"
+          content="Techflare Contact, The Techflare, Web Developers, Web Designers, Blockchain Developers, Hosting, App Developers"
+        />
+      </Helmet>
       <h2 data-aos="fade-up" data-aos-duration="2000">
         Contact Us
       </h2>

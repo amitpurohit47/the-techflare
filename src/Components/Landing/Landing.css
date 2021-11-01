@@ -27,7 +27,8 @@
   display: flex;
   flex-flow: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  padding: 2rem;
   width: 100%
 }
 
@@ -35,7 +36,8 @@
   display: flex;
   flex-flow: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  padding: 2rem;
   width: 100%
 }
 
@@ -43,7 +45,8 @@
   display: flex;
   flex-flow: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  padding: 2rem;
   width: 100%
 }
 
@@ -54,7 +57,7 @@
   width: 40%;
 }
 .landing-content3-inner img{
-  width: 40%;
+  width: 50%;
 }
 
 .landing-content1-main h1,.landing-content2-main h1,.landing-content3-main h1{
@@ -82,7 +85,11 @@
   border-radius: 35px;
   cursor: pointer;
   transform: scale(1);
-  transition: 200ms ease-in-out;
+  transition: transform 200ms ease-in-out;
+}
+
+ .carousel-item .landing-content1-inner button{
+  margin-top: 62px;
 }
 
 .landing-page button:hover{
@@ -218,4 +225,8 @@
 
 .testimonial3{
   background-color: #410b74;
+}
+
+.landing-page .techs {
+  margin: 25vh 0;
 }
