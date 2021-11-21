@@ -606,6 +606,9 @@
   .landing-page .techs{
     margin: 7vh 0;
   }
+  .service-bullets p{
+    font-size: 1rem;
+  }
 }
 
 @media (max-width: 330px) {

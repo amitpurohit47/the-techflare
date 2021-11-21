@@ -110,6 +110,7 @@
   flex-flow: column;
   align-items: center;
   justify-content: center;
+  min-height: 85vh;
 }
 
 .services-left p {
@@ -161,7 +162,7 @@
 
 .service-bullets p {
   display: inline-block;
-  width: 50%;
+  min-width: 50%;
   font-size: 1.2rem;
   padding: 10px;
   font-family: "Saira", sans-serif;

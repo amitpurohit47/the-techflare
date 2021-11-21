@@ -17,48 +17,38 @@ function Services() {
   const serviceInfo = [
     {
       name: "Create Websites",
-      info: "We offer full-range QA and testing outsourcing services, can help to develop your QA or enhance the existing one, assist you in TCoE setup and evolution. We perform end-to-end testing of mobile, web and desktop application at each stage of the development lifecycle.",
-      bullets: ["aaaaaaa", "bbbbbbbb", "cccccccc", "dddddddddd", "eeeeeeeee"],
+      info: "Website development services from the techflare give a highly secure and customizable online presence. We create responsive experiences that engage your audience and give your brand more reach. At each point of the development lifecycle, we do end-to-end testing of web applications and deliver what we promised. Getting a website that conveys your business is vital for marketing and to keep up with the massive market. It can have one page or it could be complex enough to connect you with millions of people worldwide. If your site isn't ready, don't wait! Get in touch with a skilled web developer who will make sure your internet needs are met fast and professionally.",
+      bullets: [],
     },
     {
       name: "Hosting",
-      info: "The development of reliable and scalable software solutions for any OS, browser and device. We bring together deep industry expertise and the latest IT advancements to deliver custom solutions and products that perfectly fit the needs and behavior of their users.",
-      bullets: ["aaaaaaa", "bbbbbbbb", "cccccccc", "dddddddddd", "eeeeeeeee"],
+      info: "Worried about how to host your web application? Our team would help you to set up your web application up in running. At Hosting TechFlare, we know that things happen and people make mistakes. Hence, our 24/7 customer support is always available to help you with the most complex of situations Call or email us today for anything hosting related and see how good our services      really are",
+      bullets: [],
     },
     {
       name: "Software Engineering & Consulting",
-      info: "The full set of services around development and maintenance of complex business-critical applications. Our experts build, test, deploy, protect, manage, migrate and optimize enterprise-scale digital solutions ensuring they’re always up and running and achieve the optimal TCO.",
-      bullets: ["aaaaaaa", "bbbbbbbb", "cccccccc", "dddddddddd", "eeeeeeeee"],
+      info: "Software Engineering and Consulting is a team of skilled developers and consultants who provide expansive software development services. We have the ability to offer all of your necessary programming needs from design, implementation, testing, deployment, and on-going support. Get in touch with our team today so we can get started!",
+      bullets: [],
     },
     {
-      name: "Social Media Marketing",
-      info: "User experience and user interface design for all types of websites, SaaS, and web/mobile apps. We combine the latest UI/UX trends with our customers’ individual goals and needs to deliver intuitive, vibrant, and impactful designs that power up businesses.",
-      bullets: ["aaaaaaa", "bbbbbbbb", "cccccccc", "dddddddddd", "eeeeeeeee"],
+      name: "Digital Marketing",
+      info: "In the era of digitalization where everyone is surfing over internet wouldn't it be great if we advertise the products online ? Digital Marketing is used to promote your brand and products online. And helps you to connect to your customers over internet. We at The TechFlare will help you to increase your reach and take your brand to the next level. Through our strategies you can reach to your potent customers. Services offered",
+      bullets: ["Social Media Marketing (Facebook , Twitter, Instagram)", "SEO", "Content marketing", "Email marketing", ],
     },
     {
       name: "Mobile Applications",
-      info: "The full set of services around development and maintenance of complex business-critical applications. Our experts build, test, deploy, protect, manage, migrate and optimize enterprise-scale digital solutions ensuring they’re always up and running and achieve the optimal TCO.",
-      bullets: ["aaaaaaa", "bbbbbbbb", "cccccccc", "dddddddddd", "eeeeeeeee"],
+      info: "We're optimistic developers - it's what drives us to take on new challenges. We are always looking for new ways to integrate the latest trends, technologies, and standards with our projects, ensuring you are using the best practices in your project. Our UX/UI design team helps turn your idea into a real solution by thinking through every step of process flow iteratively alongside identifying any potential problems that may arise before they happen. Do you have an idea but don't know where to start? Let our expert team identify how best to take your project from copy-pasting boilerplate code or figuring out Rails views all over again. Don’t hesitate! The one time cost will be worth it when you see everything working together seamlessly. Services Provided",
+      bullets: ["Android App", "iOS App", "Flutter App", "App Screen Designing"],
     },
     {
-      name: "Design",
-      info: "Our experts can help to develop and implement an effective IT strategy, assist in smooth digital transformation and system integration as well as advise on improvements to your digital customer experience.",
-      bullets: ["aaaaaaa", "bbbbbbbb", "cccccccc", "dddddddddd", "eeeeeeeee"],
+      name: "UI/UX Design",
+      info: "Have a great idea for a product, or have one brewing? Have no problem with the planning and design process, but need someone to put together an amazing UI/UX strategy plan? Look no further. Trust a team of talented professionals to help you build your idea without any hassle. With      Intellectsoft’s years of industry experience in UX and UI Design, we know that the key ingredients for success are collaboration from day one and building what works best for those who will use it every day. We offer robust service packages depending on your requirements—from research through design layout to UI coding all the way until launch—and can provide them at an affordable cost never-before offered by designers within other companies. Give us a call",
+      bullets: [],
     },
     {
       name: "Web Applications",
-      info: "We support businesses in achieving fact-based decision-making by converting their historical and real-time, traditional and big data into actionable insights. Our services are tailored to make the raw data and the environment ready, as well as strengthen the business with advanced analytics capabilities.",
-      bullets: ["aaaaaaa", "bbbbbbbb", "cccccccc", "dddddddddd", "eeeeeeeee"],
-    },
-    {
-      name: "SaaS",
-      info: "Help desk services for your IT environment or software products. We take on solving diverse issues from answering application functionality questions to performing fixes and enhancements on the code level for improved adoption of software, its smooth functioning and increased end user satisfaction.",
-      bullets: ["aaaaaaa", "bbbbbbbb", "cccccccc", "dddddddddd", "eeeeeeeee"],
-    },
-    {
-      name: "Industry 4.0 Solutions",
-      info: "We apply our 10-year experience to offer a full set of infrastructure services. Being ISO 2700 certified allows us to guarantee that we access our customers' without creating any security risks or vulnerabilities.",
-      bullets: ["aaaaaaa", "bbbbbbbb", "cccccccc", "dddddddddd", "eeeeeeeee"],
+      info: "We at TechFlare are passionate about web applications. We build engaging, powerful web solutions that will blow your mind. Every website needs a skilled developer on its team and at TechFlare, we've got the best in the industry working for you. From static text to complex social networks or e-commerce platforms, at TechFlare it's always new ideas that drive our process of constant innovation and experimentation so each project is fresh inspiration for all involved with the development process - whether an experienced designer or a novice programmer. A fantastic world passionate about unleashing worthwhile potential through their experiences",
+      bullets: [],
     },
   ];
 
@@ -122,9 +112,7 @@ function Services() {
           </div>
         </div>
       </div>
-      <div className="services-carousel">
-        {items}
-      </div>
+      <div className="services-carousel">{items}</div>
       {/* <div className="services-row">
         <div
           className="service"
